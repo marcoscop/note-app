@@ -7,6 +7,8 @@ usersController.renderSignUpForm = (req, res) => {
 // funcion que realiza el registro en la base dedatos
 usersController.signup = (req, res) => {
     console.log(req.body);
+    const {name, email, password, confirm_password} = req.body;
+    
     res.send('sigup');
 };
 // funcion que realiza el renderizado del login
